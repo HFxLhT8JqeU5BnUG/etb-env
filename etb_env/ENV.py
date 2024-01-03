@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 class Env:
     '''provides nice central access to grab ENV vals'''
 
-    def __init__(self):
-        load_dotenv()
+    def __init__(self, env_path: str = None):
+        load_dotenv(dotenv_path = env_path)
 
     def get(self, vars: list[str]) -> dict:
         '''pass list of env values to get, returns key-value mapping of env val name : value'''
