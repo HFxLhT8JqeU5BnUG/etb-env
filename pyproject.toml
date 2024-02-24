@@ -1,10 +1,11 @@
 [tool.poetry]
 name = "etb-env"
-version = "0.2.0"
-description = "A very simple class for getting ENV variables"
+version = "0.2.1"
+description = "A little class for getting env variables"
 authors = ["Tate Button <yg3bpwn0or679hau8fxi@duck.com>"]
 readme = "README.md"
-license = "LICENSE"
+license = "MIT"
+exclude = ["exclude.py"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
